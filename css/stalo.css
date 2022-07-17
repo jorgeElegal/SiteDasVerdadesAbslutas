@@ -1,0 +1,44 @@
+
+
+
+button{
+border: none;
+margin-top: 5%;
+margin-left: 44%;
+width: 200px;
+height: 70px;
+cursor: pointer;
+box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.h1div{
+    margin-top: 15%;
+    margin-left: 27%;
+}
+
+footer{
+    background-color: #1c1c1c;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      color: azure;
+    }
+    .Pdofooter{
+      margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    font-style: italic;
+    
+    }
+    .P2dofooter{
+      margin-top: 60px;
+     
+    
+    }
