@@ -1,33 +1,59 @@
-var i,  btn, clickou
- i =0;
- btn = document.querySelector('button');
+
+const listadeb = [ 
+  'uma linha é o conjunto de pontos',
+  '',
+  'kkk', 
+  'fccccc',
+  'zdf dr', 
+  'evrtbvet',
+  'sevrttqe',
+  'taertvbaet',
+  'bevt54yb',
+  '54tvsert',
+  'ertrgadf'
+];
+
+
+
+
+a=0;
+var i = 0
+
+const h1texto = document.querySelector('h1');
+
+const btn = document.querySelector("button"); 
+
+
+//embaralha as frases
+
+
+function embaralhar (){
+
+  let randomNumber;
+  let tmp;
   
-
-
-btn.onclick = function() {
-
-i++;
-
-if (i===1) {
-  console.log(i)
+for (i = listadeb.length; i;) {
+    randomNumber = Math.random() * i-- | 0;
+    tmp = listadeb[randomNumber];
+    // troca o número aleatório pelo atual
+    listadeb[randomNumber] = listadeb[i];
+    // troca o atual pelo aleatório
+    listadeb[i] = tmp;
 }
 
-if (i<=2) {
-  alert("por favor, pare de clicar no butão")
-  
 }
 
-if (i===3) {
-  alert("PARE DE CLICKAR NO BUTÃO")
-  
+//chama a frase
+function oi() {
+  a++
+  h1texto.innerHTML= listadeb[a];
 
+if (a = 10 ) {
+  console.log("oi")
+ }
 }
-if (i===4) {
- var rndCol = 'rgb(255, 255, 255)';
 
-}
-btn.style.color = rndCol;
-btn.style.backgroundColor = rndCol;
+btn.addEventListener("click", oi );
 
+var e =0;
 
-}
