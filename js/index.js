@@ -15,7 +15,7 @@ const listadeb = [
 
 
 
-let a = null
+
 var i = 0
 
 const h1texto = document.querySelector('h1');
@@ -44,9 +44,9 @@ for (i = listadeb.length; i;) {
 
 //chama a frase
 function oi() {
-  a++
-  h1texto.innerHTML= listadeb[a];
-
+  i++
+  h1texto.innerHTML= listadeb[i];
+}
 
 
 btn.addEventListener("click", oi );
