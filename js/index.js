@@ -15,8 +15,7 @@ const listadeb = [
 
 
 
-
-a=0;
+let a = null
 var i = 0
 
 const h1texto = document.querySelector('h1');
@@ -48,12 +47,9 @@ function oi() {
   a++
   h1texto.innerHTML= listadeb[a];
 
-if (a = 10 ) {
-  console.log("oi")
- }
-}
+
 
 btn.addEventListener("click", oi );
 
-var e =0;
+
 
